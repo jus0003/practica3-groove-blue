@@ -1,0 +1,450 @@
+/* --- VARIABLES GLOBALES (Colores de Figma) --- */
+:root {
+    --color-mostaza: #dfa638;
+    --color-crema: #fbf9f1;
+    --color-oscuro: #1a1a1a;
+    --fuente-titulos: 'Playfair Display', serif;
+    --fuente-texto: 'Inter', sans-serif;
+}
+
+/* --- RESET BÁSICO --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-mostaza);
+    color: var(--color-oscuro);
+    font-family: var(--fuente-texto);
+    line-height: 1.6;
+}
+
+/* Aplicar la fuente Serif a títulos y logo */
+h1, h2, h3, .logo, legend {
+    font-family: var(--fuente-titulos);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-oscuro);
+}
+
+/* --- CABECERA --- */
+header {
+    background-color: var(--color-crema);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+nav a {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.acciones-usuario {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.acciones-usuario button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.acciones-usuario a {
+    border: 1px solid var(--color-oscuro);
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.acciones-usuario a:last-child {
+    background-color: var(--color-oscuro);
+    color: var(--color-crema);
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- SECCIÓN PORTADA (HERO) --- */
+.portada {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    gap: 4rem;
+}
+
+.portada-texto {
+    flex: 1;
+}
+
+.subtitulo {
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.portada-texto h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: var(--color-oscuro);
+    color: var(--color-crema);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #333;
+}
+
+.portada-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.portada-imagen img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* --- SECCIÓN DESTACADOS --- */
+.destacados {
+    margin-bottom: 6rem;
+}
+
+.cabecera-destacados {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2.5rem;
+}
+
+.cabecera-destacados h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.cabecera-destacados a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.rejilla-productos {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+}
+
+.tarjeta-producto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.tarjeta-producto:hover img {
+    border: 2px solid var(--color-oscuro);
+}
+
+.tarjeta-producto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.tarjeta-producto p:nth-of-type(1) {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.tarjeta-producto p:nth-of-type(2) {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--color-oscuro);
+    color: var(--color-crema);
+    padding: 4rem 5% 2rem 5%;
+}
+
+.contacto {
+    max-width: 600px;
+    margin: 0 auto 4rem auto;
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+fieldset {
+    border: 1px solid var(--color-crema);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+legend {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-family: var(--fuente-texto);
+    border: none;
+    background-color: rgba(251, 249, 241, 0.9);
+}
+
+.contacto button {
+    padding: 1rem;
+    background-color: var(--color-mostaza);
+    color: var(--color-oscuro);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contacto button:hover {
+    background-color: #c9932d;
+}
+
+.info-footer {
+    text-align: center;
+    border-top: 1px solid rgba(251, 249, 241, 0.2);
+    padding-top: 2rem;
+    font-size: 0.9rem;
+}
+
+
+/* ========================================= */
+/* --- ESTILOS EXTRA PARA EL CATÁLOGO --- */
+/* ========================================= */
+
+.cabecera-flotante {
+    background-color: var(--color-crema);
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1.2rem 3rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+header:not(.cabecera-flotante) {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+}
+
+.cabecera-flotante nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.cabecera-flotante a.activo {
+    font-weight: bold;
+}
+
+.main-catalogo {
+    width: 90%;
+    max-width: 1200px;
+    margin: 4rem auto 6rem auto;
+}
+
+.rejilla-multilinea {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem 2%;
+}
+
+.rejilla-multilinea .tarjeta-producto {
+    flex: 0 0 32%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ========================================= */
+/* --- ESTILOS EXTRA PARA EL PRODUCTO --- */
+/* ========================================= */
+
+.producto-detalle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    width: 100%;
+}
+
+.producto-galeria {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    background-color: var(--color-crema);
+}
+
+.producto-galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.producto-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.etiqueta-pequena {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--color-oscuro);
+    opacity: 0.8;
+}
+
+.producto-info h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.producto-info h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--fuente-texto);
+    margin-bottom: 1rem;
+}
+
+.precio-caja {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.precio {
+    font-family: var(--fuente-titulos);
+    font-size: 2.5rem;
+}
+
+.stock {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.descripcion {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.especificaciones {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.spec-fila {
+    display: flex;
+    font-size: 0.85rem;
+}
+
+.spec-titulo {
+    width: 120px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.spec-valor {
+    flex: 1;
+}
+
+.btn-anadir {
+    background-color: var(--color-oscuro);
+    color: var(--color-crema);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: var(--fuente-texto);
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    width: fit-content;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.btn-anadir:hover {
+    background-color: #333;
+}

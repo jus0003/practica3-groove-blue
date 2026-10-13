@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Train - Groove & Blue</title>
+    <!-- Mismo CSS para todo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabecera normal (igual que el index, sin login para que coincida con tu Figma) -->
+    <header>
+        <div class="logo">
+            <span>◎ Groove & Blue</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Tienda</a></li>
+                <li><a href="#">Bebop</a></li>
+                <li><a href="#">Jazz Japonés</a></li>
+            </ul>
+        </nav>
+        <div class="acciones-usuario">
+            <!-- Icono círculo simple de búsqueda -->
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+            <!-- Icono carrito con el '1' -->
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="18" height="18" fill="currentColor"><path d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"/></svg> 1
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="producto-detalle">
+            
+            <!-- Izquierda: Imagen del disco alargada (gatefold) -->
+            <div class="producto-galeria">
+                <img src="/img/blue_train_shop.png" alt="Blue Train Vinilo">
+            </div>
+            
+            <!-- Derecha: Información y Compra -->
+            <div class="producto-info">
+                <p class="etiqueta-pequena">BLUE NOTE RECORDS - CATALOG #BST-81597</p>
+                <h1>Blue Train</h1>
+                <h2>John Coltrane</h2>
+                
+                <div class="precio-caja">
+                    <span class="precio">$38.00</span>
+                    <span class="stock">In Stock · Ready to Ship</span>
+                </div>
+
+                <p class="descripcion">
+                    John Coltrane's legendary masterpiece, originally recorded in 1957. Featuring an all-star lineup with Lee Morgan, Curtis Fuller, Kenny Drew, Paul Chambers, and Philly Joe Jones. This boutique 180g remaster preserves the rich, smoky analog warmth of the original sessions.
+                </p>
+
+                <div class="especificaciones">
+                    <div class="spec-fila">
+                        <span class="spec-titulo">Format</span>
+                        <span class="spec-valor">12" Heavyweight 180g Black Vinyl</span>
+                    </div>
+                    <div class="spec-fila">
+                        <span class="spec-titulo">Edition</span>
+                        <span class="spec-valor">Mono Remastered from Original Master Tapes</span>
+                    </div>
+                    <div class="spec-fila">
+                        <span class="spec-titulo">Speed</span>
+                        <span class="spec-valor">33 ⅓ RPM</span>
+                    </div>
+                    <div class="spec-fila">
+                        <span class="spec-titulo">Release Date</span>
+                        <span class="spec-valor">Originally 1958 (Reissued 2026)</span>
+                    </div>
+                </div>
+
+                <button class="btn-anadir">
+                    Añadir al carrito 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 8h-3V6c0-2.21-1.79-4-4-4S8 3.79 8 6v2H5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-7-4c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm7 16H5V10h3v2h2v-2h4v2h2v-2h3v10z"/></svg>
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

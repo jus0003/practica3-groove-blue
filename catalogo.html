@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Groove & Blue</title>
+    <!-- Aquí enlazamos tu CSS que ya funciona -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabecera flotante exclusiva del catálogo (como en tu Figma) -->
+    <header class="cabecera-flotante">
+        <div class="logo">
+            <span>◎ Groove & Blue</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html" class="activo">Tienda</a></li>
+                <li><a href="#">Bebop</a></li>
+                <li><a href="#">Jazz Japonés</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-catalogo">
+        <!-- Rejilla con flex-wrap para que los discos formen múltiples filas -->
+        <section class="catalogo-completo">
+            <div class="rejilla-productos rejilla-multilinea">
+                
+                <!-- Disco 1 -->
+                <article class="tarjeta-producto">
+                    <a href="producto.html">
+                        <img src="/img/art-blakey-and-the-jazz-messengers-art-blakey-and-the-jazz-messengers.webp" alt="Moanin'">
+                        <h3>Moanin'</h3>
+                        <p>Art Blakey & The Jazz Messengers</p>
+                    </a>
+                </article>
+
+                <!-- Disco 2 -->
+                <article class="tarjeta-producto">
+                    <a href="producto.html">
+                        <img src="/img/a_love_supreme.png" alt="A Love Supreme">
+                        <h3>A Love Supreme</h3>
+                        <p>John Coltrane</p>
+                    </a>
+                </article>
+
+                <!-- Disco 3 -->
+                <article class="tarjeta-producto">
+                    <a href="producto.html">
+                        <img src="/img/maiden_voyage.png" alt="Maiden Voyage">
+                        <h3>Maiden Voyage</h3>
+                        <p>Herbie Hancock</p>
+                    </a>
+                </article>
+
+                <!-- Disco 4 -->
+                <article class="tarjeta-producto">
+                    <a href="producto.html">
+                        <img src="/img/blue_train.png" alt="Blue Train">
+                        <h3>Blue train</h3>
+                        <p>John Coltrane</p>
+                    </a>
+                </article>
+
+                <!-- Disco 5 -->
+                <article class="tarjeta-producto">
+                    <a href="producto.html">
+                        <img src="/img/time_out.png" alt="Time Out">
+                        <h3>Time Out</h3>
+                        <p>The Dave Brubeck Quartet</p>
+                    </a>
+                </article>
+
+                <!-- Disco 6 -->
+                <article class="tarjeta-producto">
+                    <a href="producto.html">
+                        <img src="img/mingus_ah_um.png" alt="Mingus Ah Um">
+                        <h3>Mingus Ah Um</h3>
+                        <p>Charles Mingus</p>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
