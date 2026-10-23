@@ -272,6 +272,25 @@ input, textarea {
     border-top: 1px solid rgba(251, 249, 241, 0.2);
     padding-top: 2rem;
     font-size: 0.9rem;
+    color: #fbf9f1; 
+}
+
+
+.info-footer a {
+    color: #fbf9f1; 
+    text-decoration: underline;
+    font-weight: bold;
+    transition: opacity 0.2s ease;
+}
+
+.info-footer a:hover {
+    opacity: 0.7; 
+}
+
+
+.info-footer img {
+    vertical-align: middle;
+    margin-bottom: 3px;
 }
 
 
